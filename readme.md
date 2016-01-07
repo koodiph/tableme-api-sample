@@ -75,4 +75,4 @@ Refer to index.php and API/DemoApi.php
 
 ## API Documentation
 
-Refer to [documentation.html](documentation.html)
+Refer to [documentation.html](http://koodiph.github.io/tableme-api-sample/)
