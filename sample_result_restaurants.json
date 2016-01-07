@@ -1,0 +1,214 @@
+[
+	{
+		"id": 1,
+		"name": "Restaurant Name",
+		"url": "restaurant-name",
+		"description": "This is a sample description.",
+		"full_description": "This is a full sample description. This is a full sample description. This is a full sample description. This is a full sample description.",
+		"mobile_description": "This is a sample mobile description.",
+		"lat": "100.0000",
+		"lng": "150.0000",
+		"full_geo_address": "Restaurant full address",
+		"address": {
+			"street": "Street Name",
+			"city": "City Name",
+			"postcode": "0000",
+			"country": "Country Name"
+		},
+		"primary_image": "http://example.com/gallery/restaurant.jpg",
+		"city": [
+			"Country Name"
+		],
+		"city_code": [
+			"Country Code"
+		],
+		"images": [
+			"http://example.com/image/image-name.jpg",
+			"http://example.com/image/image-name.jpg",
+			"http://example.com/image/image-name.jpg/",
+			"http://example.com/image/image-name.jpg",
+			"http://example.com/image/image-name.jpg",
+			"http://example.com/image/image-name.jpg",
+			"http://example.com/image/image-name.jpg"
+		],
+		"feed_info": {
+			"image": {
+				"image_url": "",
+				"alt_text": "restaurant-white-elephant-aarhus-latinerkvarteret-9",
+				"image": "http://example.com/gallery/restaurant.jpg"
+			},
+			"headline": "Sample feed headline."
+		},
+		"status": "in-stock",
+		"turn_times": [
+			{
+				"1": {
+					"id": 837,
+					"shift_id": null,
+					"cover": 1,
+					"duration": "01:15:00"
+				},
+				"2": {
+					"id": 838,
+					"shift_id": null,
+					"cover": 2,
+					"duration": "01:30:00"
+				}
+			},
+			{
+				"1": {
+					"id": 837,
+					"shift_id": null,
+					"cover": 1,
+					"duration": "01:15:00"
+				},
+				"2": {
+					"id": 838,
+					"shift_id": null,
+					"cover": 2,
+					"duration": "01:30:00"
+				}
+			}
+		],
+		"deadline": [
+			{
+				"id": 1093,
+				"shift_id": 163,
+				"minutes": 0,
+				"time": null
+			},
+			{
+				"id": 1093,
+				"shift_id": 163,
+				"minutes": 0,
+				"time": null
+			}
+		],
+		"menu": [],
+		"seats": [
+			{
+				"seat": 1,
+				"status": "in-stock",
+				"times": [
+					"18:00:00"
+				],
+				"time_list": []
+			},
+			{
+				"seat": 2,
+				"status": "in-stock",
+				"times": [
+					"18:00:00"
+				],
+				"time_list": []
+			}
+		],
+		"timelist": [
+			{
+				"time": "18:00:00",
+				"cover": 10,
+				"status": "in-stock",
+				"status_text": "",
+				"turn_times": {
+					"1": {
+						"id": 837,
+						"shift_id": null,
+						"cover": 1,
+						"duration": "01:15:00"
+					},
+					"2": {
+						"id": 838,
+						"shift_id": null,
+						"cover": 2,
+						"duration": "01:30:00"
+					},
+					"3": {
+						"id": 839,
+						"shift_id": null,
+						"cover": 3,
+						"duration": "01:45:00"
+					},
+					"4": {
+						"id": 840,
+						"shift_id": null,
+						"cover": 4,
+						"duration": "02:00:00"
+					},
+					"5": {
+						"id": 841,
+						"shift_id": null,
+						"cover": 5,
+						"duration": "02:45:00"
+					}
+				},
+				"deadline": {
+					"id": 1093,
+					"shift_id": 163,
+					"minutes": 0,
+					"time": null
+				},
+				"seat": [
+					"1",
+					"2",
+					"3",
+					"4",
+					"5",
+					"6",
+					"7",
+					"8"
+				],
+				"tables": [
+					{
+						"id": 1046,
+						"min": 1,
+						"max": 13,
+						"table_ids": [
+							1046
+						],
+						"seats": [
+							1,
+							2,
+							3,
+							4,
+							5,
+							6,
+							7,
+							8,
+							9,
+							10,
+							11,
+							12,
+							13
+						]
+					},
+					{
+						"id": 1060,
+						"min": 1,
+						"max": 13,
+						"table_ids": [
+							1060
+						],
+						"seats": [
+							1,
+							2,
+							3,
+							4,
+							5,
+							6,
+							7,
+							8,
+							9,
+							10,
+							11,
+							12,
+							13
+						]
+					}
+				]
+			}
+		],
+		"weight": 2,
+		"showcase": 1,
+		"published": 1
+	}
+] 
