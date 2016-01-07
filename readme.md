@@ -36,7 +36,7 @@ Cache-Control: no-cache
 ------
 
 ```
-POST /v1/plusdeal/hold HTTP/1.1
+POST /v1/reserve HTTP/1.1
 Host: <hostname>
 Content-Type: application/json
 Cache-Control: no-cache
@@ -59,7 +59,7 @@ Cache-Control: no-cache
 ------
 
 ```
-POST /v1/plusdeal/complete HTTP/1.1
+POST /v1/order HTTP/1.1
 Host: <hostname>
 Cache-Control: no-cache
 Content-Type: application/x-www-form-urlencoded
@@ -70,3 +70,7 @@ billing_fname=<first_name>&billing_lname=<last_name>&billing_email=<email>&billi
 ## Sample calls
 
 Refer to index.php and API/DemoApi.php
+
+## API Documentation
+
+Refer to [documentation.html](documentation.html)

@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Tableme.com Documentatioin</title>
+    <link href="css/doc.css" rel="stylesheet">
+    <style type="text/css">
+      
+    </style>
+    
+  </head>
+  <body>
+    
+  <h2>Table of Contents </h2>
+  <div class="method-summary"></div>
+  
+  <ol>
+  
+  
+  
+  <li><a href="#tablemeCompletePost"><code><span class="http-method">post</span> /order</code></a></li>
+  
+  <li><a href="#tablemeHoldPost"><code><span class="http-method">post</span> /reserve</code></a></li>
+  
+  <li><a href="#restaurantsGet"><code><span class="http-method">get</span> /restaurants</code></a></li>
+  
+  <li><a href="#getPetById"><code><span class="http-method">get</span> /restaurants/{restaurantId}</code></a></li>
+  
+  
+  
+  </ol>
+  
+
+  
+  
+  
+  
+  <div class="method"><a name="tablemeCompletePost"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /order</code></pre></div>
+    <div class="method-summary">Complete the order. (<span class="nickname">tablemeCompletePost</span>)</div>
+    
+    <div class="method-notes"></div>
+
+    
+
+    
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="heaader">Content-Type</span> request header:
+    <ul>
+    
+      <li><code>application/x-www-form-urlencoded</code></li>
+    
+    </ul>
+    
+    <h3 class="field-label">Form parameters</h3>
+    <div class="field-items">
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Located in</th>
+            <th>Description</th>
+            <th>Required</th>
+            <th>Schema</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <tr>
+            <td>holdId</td>
+            <td>Form Parameter</td>
+            <td>Set the hold ID.</td>
+            <td>Yes</td>
+            <td></td>
+          </tr>
+          </tr>
+        </tbody>
+      </table>
+      
+      <div class="param">holdId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; Set the hold ID. </div><div class="param">billingFname (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; Set the billing first name. </div><div class="param">billingLname (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; Set the billing last name. </div><div class="param">billingEmail (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; Set the billing email address. </div><div class="param">billingPhone (required)</div>
+
+      <div class="param-desc"><span class="param-type">Form Parameter</span> &mdash; Set the billing phone number. </div>
+    </div>  <!-- field-items -->
+    
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200">inline_response_200</a>
+      
+    </div>
+    
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    
+
+    
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+    
+      <li><code>application/json</code></li>
+    
+      <li><code>application/xml</code></li>
+    
+    </ul>
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    Successfully completed an order.
+    
+    
+    <h4 class="field-label">405</h4>
+    Invalid input
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="tablemeHoldPost"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="post"><code class="huge"><span class="http-method">post</span> /reserve</code></pre></div>
+    <div class="method-summary">Hold a flash deal request. (<span class="nickname">tablemeHoldPost</span>)</div>
+    
+    <div class="method-notes"></div>
+
+    
+
+    
+    <h3 class="field-label">Consumes</h3>
+    This API call consumes the following media types via the <span class="heaader">Content-Type</span> request header:
+    <ul>
+    
+      <li><code>application/x-www-form-urlencoded</code></li>
+    
+    </ul>
+    
+
+    
+    <h3 class="field-label">Request body</h3>
+    <div class="field-items">
+      <div class="param">body (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Body Parameter</span> &mdash; order placed for purchasing the pet </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#inline_response_200_1">inline_response_200_1</a>
+      
+    </div>
+    
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    
+
+    
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+    
+      <li><code>application/json</code></li>
+    
+      <li><code>application/xml</code></li>
+    
+    </ul>
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    Returns the hold ID and the expiration date.
+    
+    
+    <h4 class="field-label">405</h4>
+    Invalid input
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="restaurantsGet"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /restaurants</code></pre></div>
+    <div class="method-summary">Get restaurants (<span class="nickname">restaurantsGet</span>)</div>
+    
+    <div class="method-notes">Returns the list of restaurants.</div>
+
+    
+
+    
+
+    
+
+    
+
+    
+    <h3 class="field-label">Query parameters</h3>
+    <div class="field-items">
+      <div class="param">city (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The city code which will filter the restaurants. </div><div class="param">slug (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The specific restaurant slug. </div><div class="param">deal (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The type of flash deals. Default value is Earlybird. </div><div class="param">allList (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Choose either to return related data to a restaurant such as seats, menus, timelist, turntimes, deadlines. Default value is true. </div><div class="param">isShowcase (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The showcase flag. Default value is false. </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      array[<a href="#Restaurant">Restaurant</a>]
+      
+    </div>
+    
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    
+
+    
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+    
+      <li><code>application/json</code></li>
+    
+    </ul>
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    An array of restaurants
+    
+    
+    <h4 class="field-label">400</h4>
+    Invalid ID supplied
+    
+    
+    <h4 class="field-label">404</h4>
+    Restaurant not found
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  <div class="method"><a name="getPetById"/>
+    <div class="method-path">
+    <a class="up" href="#__Methods">Up</a>
+    <pre class="get"><code class="huge"><span class="http-method">get</span> /restaurants/{restaurantId}</code></pre></div>
+    <div class="method-summary">Get single restaurant. (<span class="nickname">getPetById</span>)</div>
+    
+    <div class="method-notes">Returns a single restaurant by specifying an id.</div>
+
+    
+    <h3 class="field-label">Path parameters</h3>
+    <div class="field-items">
+      <div class="param">restaurantId (required)</div>
+
+      <div class="param-desc"><span class="param-type">Path Parameter</span> &mdash; ID of pet that needs to be fetched </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+
+    
+
+    
+    <h3 class="field-label">Query parameters</h3>
+    <div class="field-items">
+      <div class="param">city (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The city code which will filter the restaurants. </div><div class="param">slug (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The specific restaurant slug. </div><div class="param">deal (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The type of flash deals. Default value is Earlybird. </div><div class="param">allList (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; Choose either to return related data to a restaurant such as seats, menus, timelist, turntimes, deadlines. Default value is true. </div><div class="param">isShowcase (optional)</div>
+
+      <div class="param-desc"><span class="param-type">Query Parameter</span> &mdash; The showcase flag. Default value is false. </div>
+    </div>  <!-- field-items -->
+    
+
+    
+
+    
+    <h3 class="field-label">Return type</h3>
+    <div class="return-type">
+      <a href="#Restaurant">Restaurant</a>
+      
+    </div>
+    
+
+    <!--Todo: process Response Object and its headers, schema, examples -->
+
+    
+
+    
+    <h3 class="field-label">Produces</h3>
+    This API call produces the following media types according to the <span class="header">Accept</span> request header;
+    the media type will be conveyed by the <span class="heaader">Content-Type</span> response header.
+    <ul>
+    
+      <li><code>application/json</code></li>
+    
+    </ul>
+    
+
+    <h3 class="field-label">Responses</h3>
+    
+    <h4 class="field-label">200</h4>
+    Returns a restaurant object
+    
+    
+    <h4 class="field-label">400</h4>
+    Invalid ID supplied
+    
+    
+    <h4 class="field-label">404</h4>
+    Restaurant not found
+    
+    
+  </div> <!-- method -->
+  <hr/>
+  
+  
+  
+  
+
+  <div class="up"><a href="#__Models">Up</a></div>
+  <h2><a name="__Models">Models</a></h2>
+  [ Jump to <a href="#__Methods">Methods</a> ]
+
+  <h2>Table of Contents</h2>
+  <ol>
+  
+  
+    <li><a href="#Restaurant"><code>Restaurant</code></a></li>
+  
+  
+  
+    <li><a href="#TurnTime"><code>TurnTime</code></a></li>
+  
+  
+  
+    <li><a href="#Deadline"><code>Deadline</code></a></li>
+  
+  
+  
+    <li><a href="#Menu"><code>Menu</code></a></li>
+  
+  
+  
+    <li><a href="#Stock"><code>Stock</code></a></li>
+  
+  
+  
+    <li><a href="#Table"><code>Table</code></a></li>
+  
+  
+  
+    <li><a href="#Inline_response_200"><code>Inline_response_200</code></a></li>
+  
+  
+  
+    <li><a href="#Body"><code>Body</code></a></li>
+  
+  
+  
+    <li><a href="#Inline_response_200_1"><code>Inline_response_200_1</code></a></li>
+  
+  
+  
+    <li><a href="#Restaurant_address"><code>Restaurant_address</code></a></li>
+  
+  
+  
+    <li><a href="#Restaurant_feed_info_image"><code>Restaurant_feed_info_image</code></a></li>
+  
+  
+  
+    <li><a href="#Restaurant_feed_info"><code>Restaurant_feed_info</code></a></li>
+  
+  
+  </ol>
+
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Restaurant">Restaurant</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">url </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">full_description </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">mobile_description </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">lat </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">lng </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">full_geo_address </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">address </div><div class="param-desc"><span class="param-type">Restaurant_address</span> </div>
+      
+      <div class="param">primary_image </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">city </div><div class="param-desc"><span class="param-type">array[String]</span> </div>
+      
+      <div class="param">city_code </div><div class="param-desc"><span class="param-type">array[String]</span> </div>
+      
+      <div class="param">images </div><div class="param-desc"><span class="param-type">array[String]</span> </div>
+      
+      <div class="param">feed_info </div><div class="param-desc"><span class="param-type">Restaurant_feed_info</span> </div>
+      
+      <div class="param">status </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">turn_times </div><div class="param-desc"><span class="param-type">array[TurnTime]</span> </div>
+      
+      <div class="param">deadline </div><div class="param-desc"><span class="param-type">array[Deadline]</span> </div>
+      
+      <div class="param">menu </div><div class="param-desc"><span class="param-type">array[Menu]</span> </div>
+      
+      <div class="param">seats </div><div class="param-desc"><span class="param-type">array[String]</span> </div>
+      
+      <div class="param">timelist </div><div class="param-desc"><span class="param-type">array[String]</span> </div>
+      
+      <div class="param">weight </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">showcase </div><div class="param-desc"><span class="param-type">Boolean</span> </div>
+      
+      <div class="param">published </div><div class="param-desc"><span class="param-type">Boolean</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="TurnTime">TurnTime</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">shift_id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">cover </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">duration </div><div class="param-desc"><span class="param-type">Date</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Deadline">Deadline</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">shift_id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">minutes </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">time </div><div class="param-desc"><span class="param-type">Date</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Menu">Menu</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">name </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">description </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">obs </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">price_regular </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">price_sale </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">currency </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">status </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">stocks </div><div class="param-desc"><span class="param-type">array[Stock]</span> </div>
+      
+      <div class="param">course </div><div class="param-desc"><span class="param-type">array[Object]</span> </div>
+      
+      <div class="param">menu_type </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Stock">Stock</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">time </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">cover </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">status </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">status_text </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">turn_times </div><div class="param-desc"><span class="param-type">array[TurnTime]</span> </div>
+      
+      <div class="param">deadline </div><div class="param-desc"><span class="param-type">Deadline</span> </div>
+      
+      <div class="param">seats </div><div class="param-desc"><span class="param-type">array[Long]</span> </div>
+      
+      <div class="param">tables </div><div class="param-desc"><span class="param-type">array[Table]</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Table">Table</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">id </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">min </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">max </div><div class="param-desc"><span class="param-type">Long</span> </div>
+      
+      <div class="param">table_ids </div><div class="param-desc"><span class="param-type">array[Long]</span> </div>
+      
+      <div class="param">seats </div><div class="param-desc"><span class="param-type">array[Long]</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Inline_response_200">Inline_response_200</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">response </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">message </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Body">Body</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">access_token </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">time </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">cover </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">menus </div><div class="param-desc"><span class="param-type">array[Object]</span> </div>
+      
+      <div class="param">restaurant_slug </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Inline_response_200_1">Inline_response_200_1</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">hold_id </div><div class="param-desc"><span class="param-type">Integer</span> </div>
+      
+      <div class="param">expire_at </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Restaurant_address">Restaurant_address</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">country </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">city </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">street </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">postcode </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Restaurant_feed_info_image">Restaurant_feed_info_image</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">image </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">alt_text </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      <div class="param">image_url </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  
+  <div class="model">
+    <h3 class="field-label"><a name="Restaurant_feed_info">Restaurant_feed_info</a> <a class="up" href="#__Models">Up</a></h3>
+    <div class="field-items">
+      <div class="param">image </div><div class="param-desc"><span class="param-type">Restaurant_feed_info_image</span> </div>
+      
+      <div class="param">headline </div><div class="param-desc"><span class="param-type">String</span> </div>
+      
+      
+    </div>  <!-- field-items -->
+  </div>
+  
+  
+  </body>
+</html>
