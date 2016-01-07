@@ -32,8 +32,10 @@ Host: <hostname>
 Cache-Control: no-cache
 ```
 
-4. Reserve this table. This won't create an order but instead it will reserve (or hold) the table for your for 10 or 20 minutes.
+4. Reserve this table. 
 ------
+
+This won't create an order but instead it will reserve (or hold) the table for your for 10 or 20 minutes.
 
 ```
 POST /v1/reserve HTTP/1.1
@@ -55,7 +57,7 @@ Cache-Control: no-cache
 }
 ```
 
-5. Complete the reservation by calling the order api
+5. Complete the reservation
 ------
 
 ```
